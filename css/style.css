@@ -1,11 +1,9 @@
 div{
-
     color:black;
 }
-
 body{
     background-color: #EFF7FF;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .grid{
@@ -33,15 +31,27 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+
+
 .titulos_nav div{
-   
 }
+
+.titulos_nav p{
+    margin: 1px;
+}
+
 .menu_nav{
     grid-column-start: 1;
     grid-column-end: 3;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     border-top: #B8C1CC solid 1px;
+}
+
+
+.menu_nav div{
+    border-left: #B8C1CC solid 1px;
 }
 
 .aside{
@@ -54,6 +64,7 @@ body{
 }
 
 h2{
+    left: 1%;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -62,8 +73,10 @@ h2{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px 10px ;
-    height: 640px;
+    height: 660px;
     overflow-y: scroll;
+    border-radius: 2px;
+    border: #B8C1CC solid 1px;
 }
 
 .postres, .bebidas, .comidas{
@@ -94,14 +107,15 @@ header{
 header h1{
     color: white;
     position: absolute;
-    top: 55%;
-    left: 5%;
+    top: 30%;
+    left: 0.5%;
 }
 
 header img{
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 2px;
     filter:brightness(0.6);
 }
 
@@ -110,4 +124,13 @@ header img{
     height: 40%;
     object-fit: cover;
     border-radius: 2px;
+}
+
+h3{
+    margin-left: 2%;
+}
+
+a{
+    text-decoration: inherit;
+    color: #333333;
 }
